@@ -3,60 +3,62 @@
 
     "Pizza":[
         {
+            "id": 0,
             "type": "Mercatino.",
             "ingredients": "jamón crudo, rúcula, parmesano",
             "price": 10900,
             "sale": "false"
         },
         {
+            "id":1,
             "   type": "Doble peperoni",
             "ingredients": " doble peperoni americano",
             "Price": 10900,
             "sale": "false"
         },
-        {
+        {    "id": 2,
             "type": "Siciliana",
             "     ingredients": " salsa pomorodo, jamón, tomate, aceituna",
             " Price": 10900,
             " sale": "false"
         },
-        {
+        {   "id": 3,
             "type": "Aloha",
             " ingredients": "salsa poromodo, jamon, piña",
             "Price": 13900,
             "sale": "false"
         },
-        {
+        {   "id":4,
             "type": "Salad",
             "ingredients": "salsa pomodoro, tomate, berenjena, champiñon, rucúla",
             "Price": 15900,
             "sale": "false"
         },
-        {
+        {   "id": 5
             "type": "Vggie lovers",
             " ingredients": " Salsa pomodoro, Tomate, Pimentón, Ajo, Zuccini, Fondos de alcachofa y Rúcula",
             " price": 15900,
             " sale": "false"
         },
-        {
+        {    "id":6,
             "type": "cabreate",
             "ingredients": "Salsa pomodoro, Mozzarella, Queso de cabra, Aceitunas, Tomate fresco y Albahaca",
             "price": 16900,
             "sale": "false"
         },
-        {
+        {  "id": 7,
             "type": " Pollo BBQ",
             " ingredients": "Queso mozzarella, pollo, tocino, cebolla, salsa bbq.",
             "  Price": 14900,
             "sale": "false"
         },
-        {
+        {   "id": 8,
             "type": "Canadian Bacon",
             " ingredients": " Queso mozzarella, lomito canadiense, tocino, parmesano y romano.",
             "Price": 15900,
             "sale": "false"
         },
-        {
+        {   "id": 9,
             "type": "Italiana",
             "ingredients": "Queso mozzarella, orégano, pepperoni, salchicha italiana, aceitunas negras, champiñón.",
             "Price": 11900,
@@ -78,26 +80,27 @@
 
     "Acompañamiento": [
         {
+            "id": 10,
             "type": "alitas",
             "price": 3900,
             "sale": "false"
         },
-        {
+        {  "id": 11,
             "type": "palitos de ajo",
             "price": 1900,
             "sale": "false"
         },
-        {
+        {  "id":12,
             "type": "Chicken pops",
             "price": 2900,
             "sale": "false"
         },
-        {
+        {  "id": 13,
             "type": "Palitos de queso",
             "price": 3900,
             "sale": "false"
         },
-        {
+        {  "id": 14,
             "type": "Pan de ajo",
             "price": 1900,
             "sale": "false"
@@ -115,42 +118,42 @@
 
 
     "shop":  [ 
-          {
+          { "id": 15,
             "type": " Schop Cristal 500 ml",
             "price": 1900,
             "sale": "false"
         },
-        {
+        { "id": 16,
             "type": " Schop Cristal 1.5 L",
             "price": 3900,
             "sale": "false"
         },
-        {
+        { "id": 17,
             "type": "Schop Stella Artois 500 ml",
             "Price": 2300,
             "sale": "false"
         },
-        {
+        {  "id": 18,
             "type": "Schop Stella Artois 1.5L",
             "price": 4000,
             "sale": "false"
         },
-        {
+        { "id":19,
             "type": "Schop Heineken 500 ml.",
             "Price": 2500,
             "sale": "false"
         },
-        {
+        {  "id": 20,
             "type": " Schop Heineken 1.5 L.",
             "price": 4900,
             "sale": "false"
         },
-        {
+        {  "id": 21,
             "type": " Schop Austral 500ml ",
             "price": 3000,
             "sale": "false"
         },
-        {
+        {  "id": 22,
             "type": "Schop Austral 1.5 L",
             "price": 5000,
             "sale": "false"
@@ -160,22 +163,22 @@
 
 
     "Schops Artesanales Premium": [
-        {
+        {   "id": 23,
             "type": "Schop Mestra 500ml",
-            "price": 2400,
+            "price": 3400,
             "sale": "false"
         },
-        {
+        {   "id": 24,
             "type": "Schop Mestra Strong 6.5° 500ml",
             "price": 2400,
             "sale": "false"
         },
-        {
+        {  "id": 25,
             "type": "Schop Kunstmann Torobayo 500ml",
             "price": 2800,
             "sale": "false"
         },
-        {
+        {  "id":26,
             "type": " Schop Kunstmann Sin Filtrar 500ml ",
             "price": 2800,
             "sale": "false"
@@ -186,12 +189,12 @@
 
 
     "Cervezas Nacionales": [
-        {
+        {  "id": 27,
             "type": "Cerveza ½ litro ( Escudo )",
             "price": 2500,
             "sale": "false"
         },
-        {
+        {  "id": 28, 
             "type": "Cerveza (Cristal, Morenita)",
             "price": 2200,
             "sale": "false"
@@ -202,36 +205,37 @@
 
     "  Cervezas Premium": [
         {
+            "id": 29,
             "type": " Austral (Calafate, Lager, Patagonia)",
             "price": 2800,
             "sale": "false"
         },
-        {
+        {   "id": 30,
             "type": "Cristal 0º, sin alcohol",
             "price": 2500,
             "sale": "false"
         },
-        {
+        {    "id": 31,
             "type": " Kunstmann Lager, Bock y Pale Ale “Torobayo”",
             "price": 2800,
             "sale": "false"
         },
-        {
+        {   "id": 32,
             "type": "Erdinger Weissbier, cerveza de trigo (Alemania)",
             "price": 3300,
             "sale": "false"
         },
-        {
+        { "id": 33,
             "type": "Kunstmann Hoing Ale, cerveza con miel",
             "price": 2800,
             "sale": "false"
         },
-        {
+        {  "id": 34,
             "type": "Schöfferhofer,de trigo con pomelo (Alemania)",
             "price": 3300,
             "sale": "false"
         },
-        {
+        {  "id": 35,
             "type": "Kunstmann sin filtrar",
             "price": 3200,
             "sale": "false"
@@ -241,22 +245,22 @@
 
 
     "Cervezas Artesanales Premium": [
-        {
+        {   "id": 36,
             "type": "Mestra Cero, sin alcohol",
             "price": 2700,
             "sale": "false"
         },
-        {
+        { "id": 37,
             "type": " Mestra Amber Ale, APA, Blonde Ale, Scotch ale, Stout",
             "price": 2700,
             "sale": "false"
         },
-        {
+        {   "id": 38,
             "type": "Salzburg Altes Ale, Helles lager, Marzen, Doppelbock",
             "price": 2700,
             "sale": "false"
         },
-        {
+        {   "id": 39,
             "type": "Kross Golden, Maibock, Lupulus, Stout",
             "price": 2.800,
             "sale": "false"
@@ -267,47 +271,47 @@
 
 
     "Cervezas importadas": [
-        {
+        {  "id": 40,
             "type": "Radeberger Pilsener (Alemania)",
             "price": 3200,
             "sale": "false"
         },
-        {
+        {  "id": 41,
             "type": " Grolsh (Holanda)",
             "price": 3200,
             "sale": "false"
         },
-        {
+        {     "id": 42,
             "type": "Negra Modelo (México)",
             "price": 2900,
             "sale": "false"
         },
-        {
+        { "id":43,
             "type": " Corona Extra (México)",
             "price": 2900,
             "sale": "false"
         },
-        {
+        {   "id": 44,
             "type": " Moritz Barcelona Lager, Epidor (España)",
             "price": 3200,
             "sale": "false"
         },
-        {
+        {   "id": 45,
             "type": "Cusqueña Rubia",
             "price": 2900,
             "sale": "false"
         },
-        {
+        {   "id": 46,
             "type": "Cusqueña Negra",
             "price": 2900,
             "sale": "false"
         },
-        {
+        {   "id": 47,
             "type": " Brugel (Bélgica)",
             "price": 3200,
             "sale": "false"
         },
-        {
+        {   "id": 48,
             "type": "Gulden Draak 10  5º (Bélgica)",
             "price": 4300,
             "sale": "false"
