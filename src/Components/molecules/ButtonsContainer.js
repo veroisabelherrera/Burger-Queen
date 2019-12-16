@@ -13,6 +13,7 @@ export default class ButtonsContainer extends Component {
         }
         return (
             <div>
+                
                 <Button title={text.textoUno}  style={btnOne}/>
                 <Button title={text.textoDos}/>
             </div>
