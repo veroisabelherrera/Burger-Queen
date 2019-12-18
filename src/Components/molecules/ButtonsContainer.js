@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
+
 import Button from '../atoms/Button';
 import H1 from '../atoms/H1';
 import Parraf from '../atoms/Parraf'
-import OrganismLogin from '../organisms/OrganismLogin'
+
 
 export default class ButtonsContainer extends Component {
-    
-    PassPage=()=>{
-
-        console.log("click");
-        return <OrganismLogin/>
-    }
 
     render() {
         
@@ -25,12 +21,17 @@ export default class ButtonsContainer extends Component {
             <div>
                 <H1 title={text.textoUno}/>
                 <Parraf title={text.textoDos}/>
-                <Button title={text.textoTres}  style={btnOne} click ={this.PassPage()}/>
+                <Link to='/login'> 
+                 <Button title={text.textoTres}  
+                        style={btnOne}>
+                </Button>
+                </Link>
                 <Button title={text.textoCuatro}/>
             </div>
         )
     }
 }
+
 const btnOne= {
     background: '#fff',
     fontSize: '16px',
