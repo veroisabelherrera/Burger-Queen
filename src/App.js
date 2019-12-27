@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
+
 import './App.css';
 //import Organism from './components/organisms/Organism';
 import Auth from './Auth';
 import { useUser } from 'reactfire';
 
 /*
+
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import './App.css';
+import OrganismLogin from './components/organisms/OrganismLogin';
+
+
 class App extends Component {
   render(){
-    return <div>
-      <Organism />
-    </div>
+    return (
+      <Router>
+        
+        <Route path='/login' component={OrganismLogin}></Route>
+      </Router>
+    )
+  
   }
 }
 */
