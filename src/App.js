@@ -3,7 +3,8 @@ import './App.css';
 //import Organism from './components/organisms/Organism';
 import Auth from './Auth';
 import { useUser } from 'reactfire';
-
+import NewOrder from './Components/molecules/NewOrder'
+import menuView from './Components/organisms/GarzonView'
 
 
 //import {BrowserRouter as Router, Route} from 'react-router-dom'
@@ -38,6 +39,8 @@ function App() {
     <div className="App">
       {user && <p>Bienvenido: { user.email } </p>}
       <Auth />
+      <NewOrder/>
+      <menuView/>
     </div>
   );
 }
