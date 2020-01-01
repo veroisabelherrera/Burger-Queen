@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-
 import './App.css';
 //import Organism from './components/organisms/Organism';
 import Auth from './Auth';
 import { useUser } from 'reactfire';
-
+import NewOrder from './Components/molecules/NewOrder'
+import menuView from './Components/organisms/GarzonView'
 
 
 //import {BrowserRouter as Router, Route} from 'react-router-dom'
 //import './App.css';
 //import OrganismLogin from './components/organisms/OrganismLogin';
 
-
+/*
 export default class App extends Component {
   
 
@@ -28,6 +28,24 @@ export default class App extends Component {
   
   }
 }
+*/
+
+//Login con firebase - importando el componente de autentifiación
+
+function App() {
+  const user = useUser();
+
+  return(
+    <div className="App">
+      {user && <p>Bienvenido: { user.email } </p>}
+      <Auth />
+      <NewOrder/>
+      <menuView/>
+    </div>
+  );
+}
+
+export default App;
 
 
 
