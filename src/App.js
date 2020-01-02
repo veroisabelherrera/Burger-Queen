@@ -14,13 +14,18 @@ class App extends Component {
   render() {
     return (
 
-      <div>
+      <div style={principalDiv}>
         <OrganismLogin/>
       </div>
     )
   }
 }
 
-
+const principalDiv={
+  background: '#FBC02D',
+  display: 'flex',
+  width: '100%',
+  height: '768px',
+}
 
 export default App;

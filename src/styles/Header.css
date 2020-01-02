@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #FBC02D;
+    height: 100%;
+}
+
+.logo{
+    width: 45%;
+}
+
+.loginContainer{
+    display: grid;
+    background: #FBC02D
+
+}

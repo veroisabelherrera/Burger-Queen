@@ -4,7 +4,7 @@ export default class Parraf extends Component {
     render() {
         return (
             <div>
-                <p>{this.props.title}</p>
+                <p style={this.props.style}>{this.props.title}</p>
             </div>
         )
     }

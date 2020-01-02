@@ -4,7 +4,7 @@ export default class H4 extends Component {
     render() {
         return (
             <div>
-                <h4>{this.props.title}</h4>
+                <h4 style={this.props.style}>{this.props.title}</h4>
             </div>
         )
     }
