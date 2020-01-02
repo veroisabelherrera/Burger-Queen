@@ -1,40 +1,31 @@
 import React, { Component } from 'react';
 
-import './App.css';
-//import Organism from './components/organisms/Organism';
-import Auth from './Auth';
-import { useUser } from 'reactfire';
 
+import './App.css'; 
+//import Auth from './Auth';
+//import { useUser } from 'reactfire';
+//import { BrowserRouter as Router, Route } from 'react-router-dom'
 
+//componente
+import OrganismLogin from './components/organisms/OrganismLogin';
 
-//import {BrowserRouter as Router, Route} from 'react-router-dom'
-//import './App.css';
-//import OrganismLogin from './components/organisms/OrganismLogin';
-
-
-export default class App extends Component {
+class App extends Component {
   
-
-  render(){
-    const user = useUser();
-    
+  render() {
     return (
-       <div className="App">
-        {user && <p>Bienvenido: { user.email } </p>}
-        <Auth />
+
+      <div style={principalDiv}>
+        <OrganismLogin/>
       </div>
     )
-    
-  
   }
 }
 
+const principalDiv={
+  background: '#FBC02D',
+  display: 'flex',
+  width: '100%',
+  height: '768px',
+}
 
-
-
-//Login con firebase - importando el componente de autentifiación
-
-/* <Router>
-        
-        <Route path='/login' component={OrganismLogin}></Route>
-      </Router> */
+export default App;
