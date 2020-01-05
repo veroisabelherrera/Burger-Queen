@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import fire from '../../config/Fire';
+
 //componentes
 import Header from '../molecules/Header'
 import LoginContainer from '../molecules/LoginContainer'
+import Selection from '../molecules/Selection'
 
-import Choise from './Choise'
+
+
 
 
 export default class OrganismLogin extends Component {
@@ -36,13 +39,15 @@ export default class OrganismLogin extends Component {
 
     render() {
         return (
-
+            
+                 
             <div style={principalDiv}>
                 <Header />
                
-                    {this.state.user ? (<Choise />) : (<LoginContainer />)}
+                    {this.state.user ? (<Selection />) : (<LoginContainer />)}
                
             </div>
+            
         )
     }
 
