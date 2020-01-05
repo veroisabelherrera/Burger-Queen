@@ -5,11 +5,11 @@ import 'firebase/database';
 
 import './App.css'; 
 
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 //componente
-import OrganismLogin from './components/organisms/OrganismLogin';
-import Register from './components/organisms/Register'
+import OrganismLogin from './Components/organisms/OrganismLogin';
+import Register from './Components/organisms/Register';
 
 class App extends Component {
 
