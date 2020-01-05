@@ -10,10 +10,9 @@ import './App.css';
 
 //componente
 import OrganismLogin from './Components/organisms/OrganismLogin';
-import NewOrder from './Components/molecules/NewOrder';
-import OrderCard from './Components/molecules/OrderCard';
-import OrderItem from './Components/molecules/OrderItems';
 import Pizzas from './Components/molecules/PizzasMenu';
+import Picoteos from './Components/molecules/PicoteoMenu';
+import Shops from './Components/molecules/BebestiblesMenu';
 
 class App extends Component {
 
@@ -28,6 +27,8 @@ class App extends Component {
         <div className="orderContainer">
           <h2>Titulo del Order Container</h2>
           <Pizzas />
+          <Picoteos />
+          <Shops />
         </div>
 
       </div>
