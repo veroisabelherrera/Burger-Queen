@@ -1,24 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class OrderItems extends React.Component {
-  render() {
+class OrderItem extends Component {
+  constructor(){
+    super();
+    this.state = {
+      orders: [],
+      type: "",
+      ingredients: "",
+      price: "",
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick() {
+    const itemType = this.props.type;
+    const itemIngredients = this.props.ingredients;
+    const itemPrice = this.props.price;
+    console.log(itemType, itemIngredients, itemPrice);
+  }
+
+  render(){
     return (
-      <div className='order-items-row'>
-      <div className='order-items-count-col'>
-          <p>{this.props.count}</p>
-      </div>
-      <div className='order-items-name-col'>
-        <p>{this.props.name} </p>
-      </div>
-      <div className='order-items-value-col'>
-      <p>${this.props.value}</p>
-      </div>
-      <div className='order-items-btn-col'>
-      <button className="btn-delete" onClick={() => this.props.delete(this.props.id)}>X</button>
-      </div>
-      </div>
+      <button className = 'item-btn' onClick={this.handleClick} >
+        <div className='item-type'><p>{this.props.type}</p></div>
+        <div className='item-ingredients'><p>{this.props.ingredients}</p></div>
+        <div className='item-price'><p>{this.props.price}</p></div>
+      </button>
     )
   }
 }
 
-export default OrderItems;
+export default OrderItem;
