@@ -3,7 +3,9 @@ import fire from '../../config/Fire';
 //componentes
 import Header from '../molecules/Header'
 import LoginContainer from '../molecules/LoginContainer'
-import RegisterConteiner from '../molecules/RegisterContainer'
+
+import Choise from './Choise'
+
 
 export default class OrganismLogin extends Component {
     // con el constructor aseguramos que el estado inicial sea uno en especifico
@@ -35,14 +37,24 @@ export default class OrganismLogin extends Component {
     render() {
         return (
 
-            <div>
+            <div style={principalDiv}>
                 <Header />
-                <div>
-                    {this.state.user ? (<RegisterConteiner />) : (<LoginContainer/>)}
-                </div>
+               
+                    {this.state.user ? (<Choise />) : (<LoginContainer />)}
+               
             </div>
         )
     }
 
-
 }
+
+const principalDiv={
+    background: '#FBC02D',
+    width: '100%',
+    height: '768px'
+    
+}
+
+
+    
+    

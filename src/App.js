@@ -37,11 +37,12 @@ class App extends Component {
   }
 }
 
-const principalDiv = {
-  background: '#FBC02D',
+const principalDiv={
   display: 'flex',
-  width: '100%',
+  width: '1024px',
   height: '768px',
+  alignContent:'center',
+    
 }
 
 export default App;

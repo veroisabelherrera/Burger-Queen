@@ -81,11 +81,10 @@ export default class LoginContainer extends Component {
                         title={text.textTwo}
                         style={input}
                     />
-
-                </div>
+                </div>   
                 <div style={btns}>
-                    <Button title={text.textThree} style={btnOne} onClick={this.login} />
-                    </div>
+                     <Button title={text.textThree} style={btnOne} onClick={this.login} />
+                </div>
             </div>
 
         )
@@ -94,39 +93,42 @@ export default class LoginContainer extends Component {
  //style containers
 const loginContainer={
     
-    display: 'grid',
+    display: 'flex',
+    flexDirection:'column',
     justifyContent: 'center',
-    width: '1024px',
-    height: '80%',
+    width: '100%',
+    height: '308px'
+    
     
 }
 
 const title={
-    
-    justifyContent:'center',
-    alignText:'center',
-    
+
     width: '100%',
     height:'120px',
     display:'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    alignItems: 'center',
+    
 }
 
 const form={
-    justifyContent:'center',
-    alignText:'center',
+    
     width: '100%',
     display:'flex',
     flexDirection: 'column',
+    alignItems: 'center',
+    marginTop:'3%'
     
 }
 
 const btns={
-    
+    display:'flex',
+    flexDirection:'column',
     justifyContent:'center',
-    alignText:'center',
+    alignItems: 'center',
     width: '100%',
-    marginLeft:'15%'
+    
 }
 
 const error={
@@ -134,13 +136,14 @@ const error={
     fontWeight: 'bold',
     color:'#eb0d0d',
     fontSize: '25px',
-    background:'#f1ecec'
+    background:'#f1ecec',
+    alignItems: 'center',
 }
 
 //styles atoms components
 
 const title1={
-    marginLeft:'20%',
+    
     fontFamily: 'Roboto',
     fontWeight: 'bold',
     color:'#002B8A',
@@ -158,9 +161,9 @@ const subtitle={
 }
 
 const input={
-    width: '100%',
-    height: '25px',
-    marginTop :'2%',
+    width: '350px',
+    height: '30px',
+    marginTop :'4%',
     borderRadius:'15px',
     background:'#FFFFFF',
     fontFamily: 'Roboto',
@@ -168,22 +171,19 @@ const input={
     fontWeight: 'bold',
     color: '#4b4949',
     textAlign: 'center',
-    fontSize: '20px',
+    fontSize: '22px',
 }
 
 const btnOne = {
     background: '#002B8A',
-    fontSize: '18px',
-    width: '70%',
+    fontSize: '22px',
+    width: '200px',
     height: '40px',
     borderRadius:'15px',
-    marginTop:'5%',
+    marginTop:'8%',
     fontFamily: 'Roboto',
     fontWeight: 'bold',
     textAlign: 'center',
     color: '#FFFFFF',
+    
 }
-
-
-
-
