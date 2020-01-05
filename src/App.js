@@ -1,31 +1,38 @@
 import React, { Component } from 'react';
 
+import 'firebase/database';
+
 
 import './App.css'; 
-//import Auth from './Auth';
-//import { useUser } from 'reactfire';
-//import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 //componente
 import OrganismLogin from './components/organisms/OrganismLogin';
+import Register from './components/organisms/Register'
 
 class App extends Component {
-  
+
   render() {
     return (
-
-      <div style={principalDiv}>
-        <OrganismLogin/>
-      </div>
+      <Router>
+        <div style={principalDiv}>
+          
+          <Route exact path="/"> <OrganismLogin/></Route>
+          <Route exact path="/register"> <Register/></Route>
+          
+        </div>
+      </Router>
     )
   }
 }
 
 const principalDiv={
-  background: '#FBC02D',
   display: 'flex',
-  width: '100%',
+  width: '1024px',
   height: '768px',
+  alignContent:'center',
+    
 }
 
 export default App;

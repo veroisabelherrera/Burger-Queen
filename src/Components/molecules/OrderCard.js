@@ -1,5 +1,52 @@
 import React from 'react';
+import NewOrder from './NewOrder'
 
+
+
+
+
+
+
+/*
+class OrderCard extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      orders: [
+        { orderId: 1, orderContent: 'order 1' },
+        { orderId: 1, orderContent: 'order 1' }
+      ]
+    };
+  }
+
+  render() {
+    return (
+      <div className="orderBody">
+        <ul>
+          {
+            this.state.orders.map(order => {
+              return (
+                <NewOrder 
+                orderContent={order.orderContent}
+                orderId={order.orderId}
+                key={order.orderId} />
+              )
+            })
+          }
+        </ul>
+      </div>
+    )
+  }
+}
+
+export default OrderCard;
+
+*/
+
+
+
+
+/*
 class OrderCard extends React.Component {
   render(){
     return (
@@ -19,3 +66,4 @@ class OrderCard extends React.Component {
 }
 
 export default OrderCard;
+*/
