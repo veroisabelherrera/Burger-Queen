@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 //componente
 import OrganismLogin from './Components/organisms/OrganismLogin';
 import Register from './Components/organisms/Register';
+import Pizzas from './Components/molecules/PizzasMenu';
+import ViewGarzon from './Components/organisms/GarzonView';
 
 class App extends Component {
 
@@ -20,8 +22,11 @@ class App extends Component {
           
           <Route exact path="/"> <OrganismLogin/></Route>
           <Route exact path="/register"> <Register/></Route>
-          
+
+          <ViewGarzon />
+
         </div>
+
       </Router>
     )
   }

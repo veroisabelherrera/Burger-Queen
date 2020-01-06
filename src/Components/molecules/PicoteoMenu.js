@@ -27,7 +27,7 @@ class Picoteos extends Component {
 
         return(
             <div>
-                <li>{PicoteoItems}</li>
+                {PicoteoItems}
             </div>
         )
     }

@@ -1,5 +1,8 @@
 
 import React, { Component } from 'react';
+import firebase from 'firebase';
+import { fire } from '../../config/Fire'
+import 'firebase/firebase-database';
 import OrderItems from './OrderItems';
 import Pizzas from './PizzasMenu';
 
@@ -7,6 +10,18 @@ import Pizzas from './PizzasMenu';
 class NewOrder extends Component {
   constructor() {
     super();
+    this.state = {
+      table: "";
+      id: "";
+      items: [];
+
+
+      ]
+    }
+
+    this.NewOrder = firebase.initializeApp(fire);
+    this.db = this.app.database().ref().child('orders');
+
   }
 
   render() {
