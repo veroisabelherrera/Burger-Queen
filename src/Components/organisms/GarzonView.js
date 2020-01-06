@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Pizzas from '../molecules/PizzasMenu';
 import Picoteos from '../molecules/PicoteoMenu';
 import Shops from '../molecules/BebestiblesMenu';
+import NewOrder from '../molecules/NewOrder';
 
 
 class ViewGarzon extends Component {
@@ -14,6 +15,7 @@ class ViewGarzon extends Component {
         <Picoteos />
         <Shops />
       </div>
+
     )
   }
 }
