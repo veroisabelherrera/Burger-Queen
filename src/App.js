@@ -7,7 +7,7 @@ import './App.css';
 //import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 //componente
-import OrganismLogin from './components/organisms/OrganismLogin';
+import OrganismLogin from './Components/organisms/OrganismLogin';
 
 class App extends Component {
   
