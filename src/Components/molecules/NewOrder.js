@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
-import OrderItems from './OrderItems';
-import Pizzas from './PizzasMenu';
+//import OrderItems from './OrderItems';
+import Pizzas from './MenuPizzas';
 
 
 class NewOrder extends Component {

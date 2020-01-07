@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react'
 
 
+import NavBar from '../molecules/NavBar'
+export default class GarzonView extends Component {
+  render() {
 
-//vista de la lista del menu
-const menuView = () => {
+    const {name} = {...this.props.location.state}
+    return (
+      <div>
+        Esto es GarzonView
+      {/* pasar props */}
+        <NavBar name={name}/>
 
-  return (
-    <div>
-
-    </div>
-  )
-
+      </div>
+    )
+  }
 }
 
 
 
-export default menuView;
