@@ -1,68 +1,75 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The Rocket Power
+<a href="https://ibb.co/GJs4qTb"><img src="https://i.ibb.co/xsmtNHR/therocketpower.png" alt="therocketpower" border="0"></a>
 
-## Available Scripts
+Normal mente en los restaurant utilizan comandas escritas en papel las cuales tienen muchas desventajas entre ellas la inseguridad; son faciles de perder, se pueden mojar o manchar con los mismos productos que se ofrecen, al entregarse al cocinero puede que este no entienda la letra de quien lo escribio.
 
-In the project directory, you can run:
+Nuestro equipo The rocket power viene a presentar esta nueva app dirigida a restaurante.
+esta app trata de comandas de restaurante la cual tiene como función conectar información entre mesero y cocina de una manera interactiva, de fácil uso, ahorrando tiempo de uso y evitando desechos de papel asi también ayudamos al medio ambiente.
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Investigacion
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Historias de usuario
+el equipo comenzo investigando las necesidades de los usuarios para poder  llegar a un producto final primero nos basamos en las historias de usuario las cuales fueron estas:
 
-### `yarn test`
+* **Yo como meserx:**  quiero tomar el pedido de un cliente para no depender de mi mala memoria, para saber cuánto cobrar, y enviarlo a la cocina para evitar errores y que se puedan ir preparando en orden
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a href="https://ibb.co/BLdjrjK"><img src="https://i.ibb.co/9nz2V23/historia1.png" alt="historia1" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>fotos en png</a><br />
 
-### `yarn build`
+Como muestra la imagen para darle solución a esta necesidad del usuario agregamos dos secciones en esta pantalla 1 muestra los productos disponibles, la otra el resumen del pedido, el total a pagar y el enviar ese pedido a cocina
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+ * **Yo como jefx de cocina:** quiero ver los pedidos de los clientes en orden y marcar cuáles están listos para saber qué se debe cocinar y avisar a lxs meserxs que un pedido está listo para servirlo a un cliente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a href="https://ibb.co/ZW5qkp1"><img src="https://i.ibb.co/Bqb0S5K/historia2.png" alt="historia2" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>fotos en png</a><br />
 
-### `yarn eject`
+como muestra la imagen para darle solución a esta necesidad en la sección cocina el usuario podrá ver la lista de pedido con su descripción necesaria, al clickear el botón iniciar pedido comenzara a correr un temporizador y cambiara de color. al clickear el botón listo esta comanda desaparecerá y se enviara como listo al mesero 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* **Yo como meserx:** quiero ver los pedidos que están preparados para entregarlos rápidamente a los clientes que las hicieron.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<a href="https://ibb.co/pnbv3LJ"><img src="https://i.ibb.co/rvFGZw4/historia2-2.png" alt="historia2-2" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>fotos en png</a><br />
 
-## Learn More
+como muestra la imagen el mesero tendrá un a sección de pedidos donde se mostraran la lista de ellos los cuales cambiaran de color las que estén listas a un color celeste 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Flujo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Con estas historias de usuario creamos un flujo para poder dividir las historias en tareas pequeñas con el definimos lo que es prioridad para comenzar y lo ocupamos como guía de pasos a seguir.
 
-### Code Splitting
+<a href="https://ibb.co/xHgfg9J"><img src="https://i.ibb.co/GTMtMYc/Diagramas-Burger-Queen-01.jpg" alt="Diagramas-Burger-Queen-01" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>fotos en png</a><br />
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+## Diseño
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+El equipo trabajo en un diseño el cual fuera fácil y rápido de usar ya que los usuarios (mesero - cocina) tienen poco tiempo para interactuar con la app.
 
-### Making a Progressive Web App
+Nuestro primer diseño :
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/8BGqvMh/prototipo-1.png" alt="prototipo-1" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>fotos en png</a><br />
 
-### Advanced Configuration
+A este primer diseño le pedimos fedback a 3 futuros usuarios los cuales nos aportaron como fedback 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+* Esta super simple, facil de ocupar, todo muy claro.
+ 
+*  Visualmente debería tener colores más vivos o acordes al restaurant.
+ 
+*  Los botones deberían ser más grandes, colores de las letras 
+ contrapuestos a los botones y el fondo
 
-### Deployment
+Para dar solución de este problema consultamos con expertos en el tema para que nos dieron fedback sobre el diseño, para dar solucion, modificamos y adecuamos el producto el cual quedo en este diseño final para nuestro producto mínimo viable
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+<a href="https://ibb.co/pR91G5C"><img src="https://i.ibb.co/xfR2PdV/figma-2.png" alt="figma-2" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>fotos en png</a><br />
 
-### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Beneficio
+Nuestro producto final tiene muchos beneficios a favor como por ejemplo:
+* en el quedara un registro de los pedidos los cuales no se perderan
+
+* tiene fácil interacción por lo cual el usuario ahorrara en un 50% el tiempo en realizar el pedido ya que no volverá a escribir un producto por cada comanda si no que los seleccionara ya descritos
+
+* las comandas tendrán un cambio de estado en color por lo cual los usuarios podrán ver a que tarea debe dar mas prioridad
+
+* el usuario de cocina tendrá un temporizador para así no demorar mas de los esperado y así no atrasar la atención 
+
+* el usuario tendrá su propio ingreso por lo cual no se le confundirán los pedidos con otros usuarios 

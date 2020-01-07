@@ -8,10 +8,12 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 //componente
+
 import OrganismLogin from './components/organisms/OrganismLogin';
 import Register from './components/organisms/Register'
 import GarzonView from './components/organisms/GarzonView';
 // import NavBar from './components/molecules/NavBar';
+
 
 class App extends Component {
 
