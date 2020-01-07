@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 
 //componente
 import Button from '../atoms/Button';
+import H3 from '../atoms/H3';
+
+
 
 
 export default class NavBar extends Component {
@@ -18,7 +21,7 @@ export default class NavBar extends Component {
         const { name } = this.props;
         return (
             <div>
-                <h1>{name}</h1>
+                <H3 title={name}/>
                 <Link to="/"><Button title='Salir' /></Link>
             </div>
         )

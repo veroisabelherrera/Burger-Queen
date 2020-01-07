@@ -20,8 +20,8 @@ class App extends Component {
       <Router>
         <div style={principalDiv}>
           
-          <Route exact path="/"> <OrganismLogin/></Route>
-          <Route exact path="/register"> <Register/></Route>
+          <Route exact path="/" component={OrganismLogin}></Route>
+          <Route exact path="/register" component={Register}></Route>
           <Route exact path="/mesero" component={GarzonView}></Route>
         </div>
       </Router>
