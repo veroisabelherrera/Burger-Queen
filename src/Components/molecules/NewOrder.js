@@ -4,13 +4,14 @@ import firebase from 'firebase';
 import { fire } from '../../config/Fire'
 import 'firebase/firebase-database';
 import { render } from '@testing-library/react';
+import Pizzas from './PizzasMenu';
 
 
 
 
 class NewOrder extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       order: [],
       table: "",
@@ -24,7 +25,7 @@ class NewOrder extends Component {
 
 
 //agregamos un producto enviando al estado 'order' un objeto con el nombre y precio del item del menu
-addItem = (item) => {
+clikItem = (item) => {
   let items = this.state.order;
   items.push({
     type: item.type,
