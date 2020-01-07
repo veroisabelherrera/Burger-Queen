@@ -5,6 +5,7 @@ import { fire } from '../../config/Fire'
 import 'firebase/firebase-database';
 import { render } from '@testing-library/react';
 import Pizzas from './PizzasMenu';
+import BtnMenu from '../atoms/BtnMenu';
 
 
 
@@ -24,83 +25,105 @@ class NewOrder extends Component {
 
 
 
-//agregamos un producto enviando al estado 'order' un objeto con el nombre y precio del item del menu
-clikItem = (item) => {
-  let items = this.state.order;
-  items.push({
-    type: item.type,
-    price: item.price
-  });
+  //agregamos un producto enviando al estado 'order' un objeto con el nombre y precio del item del menu
+  clikItem = (item) => {
+    let items = this.state.order;
+    items.push({
+      type: item.type,
+      price: item.price
+    });
 
-  //sumatoria del precio del pedido total, actualizando el estado 'price'
-  let actualPrice = this.state.price;
-  let totalPrice = item.price;
-  let newPrice = actualPrice + totalPrice;
-  this.setState({
-    price: newPrice
-  });
-}
-
-
-//para eliminar los items del pedido, se eliminan del estado 'order'
-deleteItem = (elem, item) => {
-  let removeItem = this.state.order;
-  this.setState({
-    order: removeItem.filter((removeItem, i) => {
-      return i !== elem
-    }),
-  })
-
-  //se actualiza nuevamente precio, si se elimina algún item de la lista
-  let actualPrice = this.state.price;
-  let lowerPrice = item.price;
-  let newPrice = actualPrice - lowerPrice;
-  this.setState({
-    price: newPrice
-  });
-}
+    //sumatoria del precio del pedido total, actualizando el estado 'price'
+    let actualPrice = this.state.price;
+    let totalPrice = item.price;
+    let newPrice = actualPrice + totalPrice;
+    this.setState({
+      price: newPrice
+    });
+  }
 
 
-//guarda los valores de los estados que correspondan
-handleChange = (item) => {
-  this.setState({
-    [item.id]: item.value
-  })
-}
-
-
-//enviando pedido a base de datos
-sendOrder = () => {
-  const db = firebase.firestore();
-  db.collection("orders").add({
-    mesa: this.state.table,
-    order: this.state.order,
-    precio: this.state.price
-  })
-
-    .then(function (docRef) {
-      console.log("Document successfully written!", docRef.id);
+  //para eliminar los items del pedido, se eliminan del estado 'order'
+  deleteItem = (elem, item) => {
+    let removeItem = this.state.order;
+    this.setState({
+      order: removeItem.filter((removeItem, i) => {
+        return i !== elem
+      }),
     })
 
-    .catch(function (error) {
-      console.error("Error writing document: ", error);
+    //se actualiza nuevamente precio, si se elimina algún item de la lista
+    let actualPrice = this.state.price;
+    let lowerPrice = item.price;
+    let newPrice = actualPrice - lowerPrice;
+    this.setState({
+      price: newPrice
     });
-}
+  }
 
-//se muestra resumen del pedido, con botón para finalmente enviar a cocina
-render() {
-  return (
-    <div className="first-order-container">
-      <div>
-        <button>Enviar a cocina</button>
+
+  //guarda los valores de los estados que correspondan
+  handleChange = (item) => {
+    this.setState({
+      [item.id]: item.value
+    })
+  }
+
+
+  //enviando pedido a base de datos
+  sendOrder = () => {
+    const db = firebase.firestore();
+    db.collection("orders").add({
+      mesa: this.state.table,
+      order: this.state.order,
+      precio: this.state.price
+    })
+
+      .then(function (docRef) {
+        console.log("Document successfully written!", docRef.id);
+      })
+
+      .catch(function (error) {
+        console.error("Error writing document: ", error);
+      });
+  }
+
+  //se muestra resumen del pedido, con botón para finalmente enviar a cocina
+  render() {
+    return (
+      <div className="first-order-container">
+        <div>
+          {this.state.order.map((item) => (
+            <BtnMenu key={item.id} clikItem={this.clikItem} product={item} />
+          ))}
+        </div>
+
+        <div>
+          {this.state.order.map((item, elem) => (
+            <div key={elem}>
+              <p>{item.type}</p>
+              <p>{item.price}</p>
+
+              <button onClick={() => this.deleteItem(elem, item)}>Eliminar</button>
+            </div>
+          ))}
+        </div>
+
+        <div>
+          <p>Total a pagar:</p>
+          <p>{this.state.price}</p>
+        </div>
+
+        <div>
+          <button onClick={() => this.sendOrder()}>Enviar a cocina</button>
+        </div>
+
       </div>
-    </div>
-  )
+  
+    )}
 }
 
 
-
-}
 
 export default NewOrder;
 
