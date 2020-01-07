@@ -12,6 +12,7 @@ import OrganismLogin from './Components/organisms/OrganismLogin';
 import Register from './Components/organisms/Register';
 import Pizzas from './Components/molecules/PizzasMenu';
 import ViewGarzon from './Components/organisms/GarzonView';
+import NewOrder from './Components/molecules/NewOrder';
 
 class App extends Component {
 
@@ -24,6 +25,8 @@ class App extends Component {
           <Route exact path="/register"> <Register/></Route>
 
           <ViewGarzon />
+
+          <NewOrder />
 
         </div>
 

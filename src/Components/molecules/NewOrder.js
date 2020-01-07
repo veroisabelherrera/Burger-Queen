@@ -1,11 +1,9 @@
 
 import React, { Component } from 'react';
 import firebase from 'firebase';
-import { fire } from '../../config/Fire'
 import 'firebase/firebase-database';
-import { render } from '@testing-library/react';
-import Pizzas from './PizzasMenu';
 import BtnMenu from '../atoms/BtnMenu';
+import OrderItem from './OrderItems';
 
 
 
@@ -16,7 +14,8 @@ class NewOrder extends Component {
     this.state = {
       order: [],
       table: "",
-      price: 0
+      price: 0,
+
     }
   }
 
@@ -80,17 +79,19 @@ class NewOrder extends Component {
     })
 
       .then(function (docRef) {
-        console.log("Document successfully written!", docRef.id);
+        console.log("Enviado exitosamente!", docRef.id);
       })
 
       .catch(function (error) {
-        console.error("Error writing document: ", error);
+        console.error("Error al enviar", error);
       });
   }
 
   //se muestra resumen del pedido, con botón para finalmente enviar a cocina
   render() {
     return (
+
+
       <div className="first-order-container">
         <div>
           {this.state.order.map((item) => (
