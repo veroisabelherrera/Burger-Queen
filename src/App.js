@@ -1,31 +1,42 @@
 import React, { Component } from 'react';
 
+import 'firebase/database';
+
 
 import './App.css'; 
-//import Auth from './Auth';
-//import { useUser } from 'reactfire';
-//import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 //componente
-import OrganismLogin from './Components/organisms/OrganismLogin';
+
+import OrganismLogin from './components/organisms/OrganismLogin';
+import Register from './components/organisms/Register'
+import GarzonView from './components/organisms/GarzonView';
+// import NavBar from './components/molecules/NavBar';
+
 
 class App extends Component {
-  
+
   render() {
     return (
-
-      <div style={principalDiv}>
-        <OrganismLogin/>
-      </div>
+      <Router>
+        <div style={principalDiv}>
+          
+          <Route exact path="/" component={OrganismLogin}></Route>
+          <Route exact path="/register" component={Register}></Route>
+          <Route exact path="/mesero" component={GarzonView}></Route>
+        </div>
+      </Router>
     )
   }
 }
 
 const principalDiv={
-  background: '#FBC02D',
   display: 'flex',
-  width: '100%',
+  width: '1024px',
   height: '768px',
+  alignContent:'center',
+    
 }
 
 export default App;

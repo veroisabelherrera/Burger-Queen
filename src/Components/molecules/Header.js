@@ -23,10 +23,11 @@ const header={
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
-    marginTop:'2%'
+    
     
 }
 
 const logo={
-    width: '40%'
+    marginTop:'2%',
+    width: '35%'
 }
