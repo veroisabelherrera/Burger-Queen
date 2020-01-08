@@ -46,7 +46,7 @@ export default class NameRegistrer extends Component {
                         />
                 </Link>
                 <Link to="/">
-                    <Button style={btnOut} title='Volver' />
+                    <Button style={btnOut} onClick={this.out}title='Volver' />
                 </Link>
             </form>
         )

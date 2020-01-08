@@ -12,22 +12,33 @@ export default class GarzonView extends Component {
 
     const {name} = {...this.props.location.state}
     return (
-      <div>
-        
-      {/* pasar props */}
-        <NavBar name={name}/>
+      <div style={principalDiv}>
         <div>
-          <ContNewOrder/>
+        {/* pasar props */}
+          <NavBar name={name}/>
         </div>
-
-        <div>
-          <ContResumeOrder/>
+        <div style={contMenu}>
+          <div>
+            <ContNewOrder/>
+          </div>  
+    
+          <div>
+            <ContResumeOrder/>
+          </div>
         </div>
-
       </div>
     )
   }
 }
 
+const principalDiv={
+  
+  width: '100%',
+  height: '768px'
+}
 
+const contMenu={
+  display:'flex',
+  height:'80%'
 
+}

@@ -132,12 +132,19 @@ const btns={
 }
 
 const error={
+    display:'flex',
+    flexDirection:'column',
+    justifyContent:'center',
+    alignItems: 'center',
+    width: '50%',
+    marginLeft:'25%',
+    marginTop:'2%',
     fontFamily: 'Roboto',
     fontWeight: 'bold',
     color:'#eb0d0d',
     fontSize: '25px',
     background:'#f1ecec',
-    alignItems: 'center',
+   
 }
 
 //styles atoms components

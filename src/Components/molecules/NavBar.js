@@ -20,10 +20,34 @@ export default class NavBar extends Component {
     render() {
         const { name } = this.props;
         return (
-            <div>
-                <H3 title={name}/>
-                <Link to="/"><Button title='Salir' /></Link>
+            <div style={navCont}> 
+                <H3 title={name} style={nameWaiter}/>
+                <Link to="/"><Button title='Salir' style={outBnt} onClick={this.out} /></Link>
             </div>
         )
     }
+}
+
+const navCont ={
+    display: 'flex',
+    justifyContent:'space-between',
+    with:'100%',
+    alignItems:'center',
+    background:'#FE5900',
+    height: '68px'
+    
+}
+const nameWaiter={
+    fontFamily: 'Roboto',
+    color:'#FFFFFF',
+    fontSize: '25px',
+    marginLeft:'30px',
+}
+
+const outBnt={
+    
+    color:'#FFFFFF',
+    fontSize: '23px',
+    fontFamily: 'Roboto',
+    marginRight:'30px',
 }
