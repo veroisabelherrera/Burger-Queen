@@ -27,7 +27,7 @@ class Pizzas extends Component {
 
         return(
             <div>
-                <li>{PizzaItems}</li>
+                {PizzaItems}
             </div>
         )
     }

@@ -27,7 +27,7 @@ class Shops extends Component {
 
         return(
             <div>
-                <li>{ShopsItems}</li>
+                {ShopsItems}
             </div>
         )
     }
