@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import fire from '../../config/Fire'
+
 import { Link } from 'react-router-dom';
 
 //componentes
@@ -17,12 +17,7 @@ export default class NameRegistrer extends Component {
         this.setState({ uname: e.target.value });
 
     }
-    out = e => {
-        e.preventDefault();
-        fire.auth().signOut().then(function () {
-        }).catch(function (error) {
-        });
-    }
+    
 
     render() {
         const { uname } = this.state
@@ -46,7 +41,7 @@ export default class NameRegistrer extends Component {
                         />
                 </Link>
                 <Link to="/">
-                    <Button style={btnOut} onClick={this.out}title='Volver' />
+                    <Button style={btnOut}  title='Volver' />
                 </Link>
             </form>
         )

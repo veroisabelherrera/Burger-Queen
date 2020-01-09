@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+
 import Button from '../atoms/Button'
 import H1 from '../atoms/H1'
 import H3 from '../atoms/H3'
@@ -7,16 +9,19 @@ import H3 from '../atoms/H3'
 
 export default class ContNewOrder extends Component {
     
-    
+   
     render() {
+    
         return (
             <div style={contPrincipal}>
                 <H1 title ='Tomar nuevo pedido' style={contPedido}/>
                 <H3 title ='Selecciona sector de trabajo' style={contPedido1}/>
-                <Button title ='Sector A' style={btnArea}/>
-                <Button title ='Sector B' style={btnArea}/>
-                <Button title ='Sector C' style={btnArea}/>
-                <Button title ='Sector D' style={btnArea}/>
+                <Link to='./table'>
+                    <Button title ='Sector A' style={btnArea}/>
+                    <Button title ='Sector B' style={btnArea}/>
+                    <Button title ='Sector C' style={btnArea}/>
+                    <Button title ='Sector D' style={btnArea}/>
+                </Link>
             </div>
         )
     }

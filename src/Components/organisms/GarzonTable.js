@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 
 import NavBar from '../molecules/NavBar'
-import ContNewOrder from '../molecules/ContNewOrder'
+import ConNumberTable from '../molecules/ConNumberTable'
 import ContResumeOrder from '../molecules/ContResumeOrder'
 
-
-
-export default class GarzonView extends Component {
-  render() {
-
-    const {name} = {...this.props.location.state}
-    return (
+export default class GarzonTable extends Component {
+    render() {
+        const {name} = {...this.props.location.state}
+      
+        return (
+    
+               
       <div style={principalDiv}>
         <div>
         {/* pasar props */}
@@ -18,7 +18,7 @@ export default class GarzonView extends Component {
         </div>
         <div style={contMenu}>
           <div>
-            <ContNewOrder/>
+            <ConNumberTable/>
           </div>  
     
           <div>
@@ -45,3 +45,4 @@ const contMenu={
   height:'80%'
 
 }
+        

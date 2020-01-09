@@ -9,22 +9,18 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import OrganismLogin from './components/organisms/OrganismLogin';
 import Register from './components/organisms/Register'
 import GarzonView from './components/organisms/GarzonView';
-// import NavBar from './components/molecules/NavBar';
+import ViewGarzon from './components/organisms/GarzonView2';
+import NewOrder from './components/molecules/NewOrder';
+import GarzonTable from './components/organisms/GarzonTable'
 
-
-
-// import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-// //componente
-// import OrganismLogin from './Components/organisms/OrganismLogin';
 // import Register from './Components/organisms/Register';
 // import Pizzas from './Components/molecules/PizzasMenu';
-// import ViewGarzon from './Components/organisms/GarzonView';
-// import NewOrder from './Components/molecules/NewOrder';
+
 
 class App extends Component {
 
   render() {
+  
     return (
       <Router>
         <div style={principalDiv}>
@@ -33,11 +29,12 @@ class App extends Component {
           <Route exact path="/" component={OrganismLogin}></Route>
           <Route exact path="/register" component={Register}></Route>
           <Route exact path="/mesero" component={GarzonView}></Route>
+          <Route exact path="/mesero1" component={ViewGarzon}></Route>
+          <Route exact path="/table" component={GarzonTable} ></Route>
 
+          
 
-          {/* <ViewGarzon />
-
-          <NewOrder /> */}
+          <NewOrder />
 
 
         </div>
