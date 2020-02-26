@@ -32,9 +32,9 @@ class App extends Component {
           <Route exact path="/mesero1" component={ViewGarzon}></Route>
           <Route exact path="/table" component={GarzonTable} ></Route>
 
-          
 
           <NewOrder />
+
 
 
         </div>
