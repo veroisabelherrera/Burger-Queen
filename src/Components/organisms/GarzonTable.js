@@ -45,4 +45,3 @@ const contMenu={
   height:'80%'
 
 }
-        

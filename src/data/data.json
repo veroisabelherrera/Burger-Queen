@@ -1,145 +1,145 @@
 {
-        "Pizza": [
-            {
-                "id": 0,
-                "type": "Mercatino.",
-                "ingredients": "jamón crudo, rúcula, parmesano",
-                "price": 10900,
-                "sale": "false"
-            },
-            {
-                "id": 1,
-                "type": "Doble peperoni",
-                "ingredients": " doble peperoni americano",
-                "price": 10900,
-                "sale": "false"
-            },
-            {
-                "id": 2,
-                "type": "Siciliana",
-                "ingredients": " salsa pomorodo, jamón, tomate, aceituna",
-                "price": 10900,
-                "sale": "false"
-            },
-            {
-                "id": 3,
-                "type": "Aloha",
-                "ingredients": "salsa poromodo, jamon, piña",
-                "price": 13900,
-                "sale": "false"
-            },
-            {
-                "id": 4,
-                "type": "Salad",
-                "ingredients": "salsa pomodoro, tomate, berenjena, champiñon, rucúla",
-                "price": 15900,
-                "sale": "false"
-            },
-            {
-                "id": 5,
-                "type": "Vggie lovers",
-                "ingredients": " Salsa pomodoro, Tomate, Pimentón, Ajo, Zuccini, Fondos de alcachofa y Rúcula",
-                "price": 15900,
-                "sale": "false"
-            },
-            {
-                "id": 6,
-                "type": "cabreate",
-                "ingredients": "Salsa pomodoro, Mozzarella, Queso de cabra, Aceitunas, Tomate fresco y Albahaca",
-                "price": 16900,
-                "sale": "false"
-            },
-            {
-                "id": 7,
-                "type": " Pollo BBQ",
-                "ingredients": "Queso mozzarella, pollo, tocino, cebolla, salsa bbq.",
-                "price": 14900,
-                "sale": "false"
-            },
-            {
-                "id": 8,
-                "type": "Canadian Bacon",
-                "ingredients": " Queso mozzarella, lomito canadiense, tocino, parmesano y romano.",
-                "price": 15900,
-                "sale": "false"
-            },
-            {
-                "id": 9,
-                "type": "Italiana",
-                "ingredients": "Queso mozzarella, orégano, pepperoni, salchicha italiana, aceitunas negras, champiñón.",
-                "price": 11900,
-                "sale": "false"
-            }
-        ],
-        "Picoteo": [
-            {
-                "id": 10,
-                "type": "alitas",
-                "price": 3900,
-                "sale": "false"
-            },
-            {
-                "id": 11,
-                "type": "palitos de ajo",
-                "price": 1900,
-                "sale": "false"
-            },
-            {
-                "id": 12,
-                "type": "Chicken pops",
-                "price": 2900,
-                "sale": "false"
-            },
-            {
-                "id": 13,
-                "type": "Palitos de queso",
-                "price": 3900,
-                "sale": "false"
-            },
-            {
-                "id": 14,
-                "type": "Pan de ajo",
-                "price": 1900,
-                "sale": "false"
-            }
-        ],
-        "Shop": [
-            {
-                "id": 15,
-                "type": " Schop Cristal 500 ml",
-                "price": 1900,
-                "sale": "false"
-            },
-            {
-                "id": 16,
-                "type": "Schop Stella Artois 500 ml",
-                "price": 2300,
-                "sale": "false"
-            },
-            {
-                "id": 17,
-                "type": "Schop Heineken 500 ml",
-                "price": 2500,
-                "sale": "false"
-            },
-            {
-                "id": 18,
-                "type": "Schop Austral 500ml",
-                "price": 3000,
-                "sale": "false"
-            },
-            {
-                "id": 19,
-                "type": "Schop Kunstmann Torobayo 500ml",
-                "price": 2800,
-                "sale": "false"
-            },
-            {
-                "id": 20,
-                "type": "Schop Mestra Strong 6.5° 500ml",
-                "price": 2400,
-                "sale": "false"
-            }
-        ]
-        
+    "Pizza": [
+        {
+            "id": 0,
+            "type": "Mercatino.",
+            "ingredients": "jamón crudo, rúcula, parmesano",
+            "price": 10900,
+            "sale": "false"
+        },
+        {
+            "id": 1,
+            "type": "Doble peperoni",
+            "ingredients": " doble peperoni americano",
+            "price": 10900,
+            "sale": "false"
+        },
+        {
+            "id": 2,
+            "type": "Siciliana",
+            "ingredients": " salsa pomorodo, jamón, tomate, aceituna",
+            "price": 10900,
+            "sale": "false"
+        },
+        {
+            "id": 3,
+            "type": "Aloha",
+            "ingredients": "salsa poromodo, jamon, piña",
+            "price": 13900,
+            "sale": "false"
+        },
+        {
+            "id": 4,
+            "type": "Salad",
+            "ingredients": "salsa pomodoro, tomate, berenjena, champiñon, rucúla",
+            "price": 15900,
+            "sale": "false"
+        },
+        {
+            "id": 5,
+            "type": "Vggie lovers",
+            "ingredients": " Salsa pomodoro, Tomate, Pimentón, Ajo, Zuccini, Fondos de alcachofa y Rúcula",
+            "price": 15900,
+            "sale": "false"
+        },
+        {
+            "id": 6,
+            "type": "cabreate",
+            "ingredients": "Salsa pomodoro, Mozzarella, Queso de cabra, Aceitunas, Tomate fresco y Albahaca",
+            "price": 16900,
+            "sale": "false"
+        },
+        {
+            "id": 7,
+            "type": " Pollo BBQ",
+            "ingredients": "Queso mozzarella, pollo, tocino, cebolla, salsa bbq.",
+            "price": 14900,
+            "sale": "false"
+        },
+        {
+            "id": 8,
+            "type": "Canadian Bacon",
+            "ingredients": " Queso mozzarella, lomito canadiense, tocino, parmesano y romano.",
+            "price": 15900,
+            "sale": "false"
+        },
+        {
+            "id": 9,
+            "type": "Italiana",
+            "ingredients": "Queso mozzarella, orégano, pepperoni, salchicha italiana, aceitunas negras, champiñón.",
+            "price": 11900,
+            "sale": "false"
+        }
+    ],
+    "Picoteo": [
+        {
+            "id": 10,
+            "type": "alitas",
+            "price": 3900,
+            "sale": "false"
+        },
+        {
+            "id": 11,
+            "type": "palitos de ajo",
+            "price": 1900,
+            "sale": "false"
+        },
+        {
+            "id": 12,
+            "type": "Chicken pops",
+            "price": 2900,
+            "sale": "false"
+        },
+        {
+            "id": 13,
+            "type": "Palitos de queso",
+            "price": 3900,
+            "sale": "false"
+        },
+        {
+            "id": 14,
+            "type": "Pan de ajo",
+            "price": 1900,
+            "sale": "false"
+        }
+    ],
+    "Shop": [
+        {
+            "id": 15,
+            "type": " Schop Cristal 500 ml",
+            "price": 1900,
+            "sale": "false"
+        },
+        {
+            "id": 16,
+            "type": "Schop Stella Artois 500 ml",
+            "price": 2300,
+            "sale": "false"
+        },
+        {
+            "id": 17,
+            "type": "Schop Heineken 500 ml",
+            "price": 2500,
+            "sale": "false"
+        },
+        {
+            "id": 18,
+            "type": "Schop Austral 500ml",
+            "price": 3000,
+            "sale": "false"
+        },
+        {
+            "id": 19,
+            "type": "Schop Kunstmann Torobayo 500ml",
+            "price": 2800,
+            "sale": "false"
+        },
+        {
+            "id": 20,
+            "type": "Schop Mestra Strong 6.5° 500ml",
+            "price": 2400,
+            "sale": "false"
+        }
+    ]
+    
 }

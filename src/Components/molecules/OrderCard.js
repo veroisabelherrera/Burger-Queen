@@ -18,7 +18,6 @@ class OrderCard extends React.Component {
       ]
     };
   }
-
   render() {
     return (
       <div className="orderBody">
@@ -38,9 +37,7 @@ class OrderCard extends React.Component {
     )
   }
 }
-
 export default OrderCard;
-
 */
 
 
@@ -64,6 +61,5 @@ class OrderCard extends React.Component {
     )
   }
 }
-
 export default OrderCard;
 */

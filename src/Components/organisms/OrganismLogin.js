@@ -59,7 +59,3 @@ const principalDiv={
     height: '768px'
     
 }
-
-
-    
-    
